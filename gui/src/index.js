@@ -12,6 +12,7 @@ if (process.env.REACT_APP_API_URL) {
 
 export async function createUser(data) {
     const response = await fetch(API_URL + `/api/user`, {
+        credentials: 'include',
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({user: data})
