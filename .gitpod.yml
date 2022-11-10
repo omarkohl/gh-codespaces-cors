@@ -11,9 +11,9 @@ ports:
     description: React frontend to interact with the API
     port: 3000
     onOpen: open-browser
-    visibility: public
+    visibility: private
   - name: Backend
     description: API
     port: 8080
     onOpen: open-browser
-    visibility: public
+    visibility: private
