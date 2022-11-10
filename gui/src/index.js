@@ -4,8 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+let API_URL = "http://localhost:8080";
+
+if (process.env.REACT_APP_API_URL) {
+    API_URL = process.env.REACT_APP_API_URL;
+}
+
 export async function createUser(data) {
-    const response = await fetch(`http://localhost:8080/api/user`, {
+    const response = await fetch(API_URL + `/api/user`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({user: data})
