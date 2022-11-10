@@ -15,5 +15,5 @@ ports:
   - name: Backend
     description: API
     port: 8080
-    onOpen: open-browser
+    onOpen: ignore
     visibility: private
