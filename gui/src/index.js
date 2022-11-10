@@ -4,6 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+export async function createUser(data) {
+    const response = await fetch(`http://localhost:8080/api/user`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({user: data})
+      })
+    return await response.json();
+}
+
+createUser({name: 'asdf', age: 23}).then(items => console.log('items: ', items));
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
