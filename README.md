@@ -1,6 +1,7 @@
-# gitpod-cors
-Minimal example to debug CORS issues with Gitpod
-https://github.com/gitpod-io/gitpod/issues/14576 .
+# GitHub Codespaces - CORS issue
+
+Minimal example to debug CORS issues with GitHub Codespaces
+https://github.com/orgs/community/discussions/15351 .
 
 
 ## Gitpod
