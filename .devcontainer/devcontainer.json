@@ -29,5 +29,6 @@
 		"8080": {
 			"label": "API"
 		}
-	}
+	},
+	"postCreateCommand": "cd gui; npm install"
 }
