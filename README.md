@@ -46,33 +46,3 @@ include authentication information and web browsers will not do this!
 > indicate that the actual request can be made with credentials.
 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#requests_with_credentials
-
-
-### Error case
-
-Browser screenshot
-
-![Error](./error.png)
-
-API console output (empty):
-```
-...
-```
-
-
-### Success case
-
-Browser screenshot
-
-![Error](./success.png)
-
-API console output:
-
-```
-[cors] 2022/11/10 11:32:22 Handler: Preflight request
-[cors] 2022/11/10 11:32:22   Preflight response headers: map[Access-Control-Allow-Credentials:[true] Access-Control-Allow-Headers:[Content-Type] Access-Control-Allow-Methods:[POST] Access-Control-Allow-Origin:[https://3000-omarkohl-gitpodcors-l2wj2lg55co.ws-eu74.gitpod.io] Vary:[Origin Access-Control-Request-Method Access-Control-Request-Headers]]
-[cors] 2022/11/10 11:32:22 Handler: Actual request
-[cors] 2022/11/10 11:32:22   Actual response added headers: map[Access-Control-Allow-Credentials:[true] Access-Control-Allow-Origin:[https://3000-omarkohl-gitpodcors-l2wj2lg55co.ws-eu74.gitpod.io] Vary:[Origin]]
-{"user":{"name":"Tom","age":23}}
-2022/11/10 11:32:22 "POST http://8080-omarkohl-gitpodcors-l2wj2lg55co.ws-eu74.gitpod.io/api/user HTTP/1.1" from 192.168.162.135:46600 - 200 27B in 45.43µs
-```
