@@ -1,0 +1,33 @@
+{
+	"name": "Codespaces CORS Issue",
+	"image": "mcr.microsoft.com/devcontainers/go:0-1.19",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "lts"
+		},
+		"ghcr.io/devcontainers/features/go:1": {}
+	},
+
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"go.toolsManagement.checkForUpdates": "local",
+				"go.useLanguageServer": true,
+				"go.gopath": "/go"
+			}
+		}
+	},
+
+	"forwardPorts": [
+		8080,
+		3000
+	],
+	"portsAttributes": {
+		"3000": {
+			"label": "GUI"
+		},
+		"8080": {
+			"label": "API"
+		}
+	}
+}
