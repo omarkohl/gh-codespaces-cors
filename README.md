@@ -8,9 +8,7 @@ https://github.com/orgs/community/discussions/15351 .
 
 A simple dev environment, directly in the browser.
 
-<a target="_blank"
-  href="https://github.com/codespaces/new?hide_repo_select=true&amp;ref=main&amp;repo=564811971&amp;machine=basicLinux32gb"
->
+<a target="_blank" href="https://github.com/codespaces/new?hide_repo_select=true&amp;ref=main&amp;repo=564811971&amp;machine=basicLinux32gb">
   <img
     src="https://github.com/codespaces/badge.svg"
     alt="Open in GitHub Codespaces"
