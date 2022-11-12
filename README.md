@@ -4,16 +4,11 @@ Minimal example to debug CORS issues with GitHub Codespaces
 https://github.com/orgs/community/discussions/15351 .
 
 
-## Gitpod
+## GitHub Codespaces
 
 A simple dev environment, directly in the browser.
 
-<a href="https://gitpod.io/#https://github.com/omarkohl/gitpod-cors">
-  <img
-    src="https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod"
-    alt="Contribute with Gitpod"
-  />
-</a>
+TODO
 
 
 ## Code

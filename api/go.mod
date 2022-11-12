@@ -1,4 +1,4 @@
-module github.com/omarkohl/gitpod-cors/api
+module github.com/omarkohl/gh-codespaces-cors/api
 
 go 1.19
 
