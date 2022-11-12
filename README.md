@@ -20,19 +20,21 @@ create a new user via a POST request.
 
 ## Reproducing the issue
 
-1. Start this environment in Gitpod.
-2. Open the browser for the GUI (port 3000), which will open by default anyway.
+1. Start this environment in Codespaces.
+2. Execute `cd api; go run .`
+3. Open a different terminal and execute `cd gui; REACT_APP_API_URL="https://${CODESPACE_NAME}-8080.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}" npm start`
+4. Open the browser for the GUI (port 3000)
 3. Press the 'Create User' button and you will get an error.
-4. In Gitpod make the API port **public** instead of private.
+4. In Codespaces make the API port **public** instead of private.
 6. Press the 'Create User' button in the GUI again and you will get a success
    message.
 
 You can see more details about the requests in the browser development tools.
 
-Also check the API console window in Gitpod and you will see that no log
+Also check the API console window in Codespaces and you will see that no log
 messages are shown in the error case because the requests never reach the API
-but are blocked by Gitpod. Note in particular that the "Preflight request" 
-is not being logged by the API! This is what leads me to suspect that Gitpod 
+but are blocked by Codespaces. Note in particular that the "Preflight request" 
+is not being logged by the API! This is what leads me to suspect that Codespaces 
 is blocking the request because it lacks authentication information, but the 
 CORS spec is clear on the subject. Preflight OPTIONS requests must not 
 include authentication information and web browsers will not do this!
