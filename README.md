@@ -24,7 +24,7 @@ create a new user via a POST request.
 2. Execute `cd api; go run .`
 3. Open a different terminal and execute `cd gui; REACT_APP_API_URL="https://${CODESPACE_NAME}-8080.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}" npm start`
 4. Open the browser for the GUI (port 3000)
-3. Press the 'Create User' button and you will get an error.
+3. Press the 'Create User' button and you will get an error. **This is the issue.** This request should succeed.
 4. In Codespaces make the API port **public** instead of private.
 6. Press the 'Create User' button in the GUI again and you will get a success
    message.
